@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "img2string"
+version = "0.1.0"
+description = ""
+authors = ["Arunscape <8227297+Arunscape@users.noreply.github.com>"]
+license = "AGPL-3.0-only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "*"
+numpy = "*"
+torch = {version = "*", extras = ["cpu"]}
+torchvision = "*"
+pytesseract = "^0.3.10"
+opencv-contrib-python = "^4.7.0.72"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
